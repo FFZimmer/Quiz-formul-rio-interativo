@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <label for="q1">1. Qual é a capital do Brasil?</label><br>
+        <input type="text" id="q1" name="q1">
+      </div>
+      <div class="question">
+        <p>2. Quais destes são planetas do sistema solar?</p>
+        <input type="checkbox" id="q2a" name="q2" value="Mercury">
+        <label for="q2a">Mercúrio</label><br>
+        <input type="checkbox" id="q2b" name="q2" value="Venus">
+        <label for="q2b">Vênus</label><br>
+        <input type="checkbox" id="q2c" name="q2" value="Mars">
+        <label for="q2c">Marte</label><br>
+      </div>
+      <div class="question">
+        <p>3. Qual é o resultado de 2 + 2?</p>
+        <input type="radio" id="q3a" name="q3" value="4">
+        <label for="q3a">4</label><br>
+        <input type="radio" id="q3b" name="q3" value="5">
+        <label for="q3b">5</label><br>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
